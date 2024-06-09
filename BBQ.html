@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBQ Buffet Menu</title>
+    <link rel="stylesheet" href="BBQstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Blossom Festival</a></li>
+                <li><a href="BBQ.html">Garden BBQ</a></li>
+                <li><a href="setMenu.html">Set Menu</a></li>
+                <li><a href="canape.html">Canape</a></li>
+                <li><a href="buffet.html">Buffet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>BBQ Buffet Menu</h1>
+        
+        <section id="grill">
+            <h2>From the Grill</h2>
+            <ul>
+                <li>
+                    <h3>Grilled Cheese Burger Sliders</h3>
+                    <p>Mini burgers with melted cheese and pickles</p>
+                </li>
+                <li>
+                    <h3>Peri Peri Chicken Thighs</h3>
+                    <p>Spicy peri peri marinated chicken thighs</p>
+                </li>
+                <li>
+                    <h3>Smoked Sausages</h3>
+                    <p>Served with caramelized onions and mustard</p>
+                </li>
+                <li>
+                    <h3>Grilled Vegetable Skewers</h3>
+                    <p>A variety of seasonal vegetables</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="sides">
+            <h2>Sides</h2>
+            <ul>
+                <li>
+                    <h3>Loaded Baked Potatoes</h3>
+                    <p>With sour cream, bacon bits, and chives</p>
+                </li>
+                <li>
+                    <h3>Corn on the Cob</h3>
+                    <p>Grilled with butter and herbs</p>
+                </li>
+                <li>
+                    <h3>Bread Platter</h3>
+                    <p>Assorted freshly baked bread with butter</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="salads">
+            <h2>Salads</h2>
+            <ul>
+                <li>
+                    <h3>South African Braai Salad</h3>
+                    <p>A traditional South African salad with tomatoes, onions, cucumbers, peppers, and a tangy dressing</p>
+                </li>
+                <li>
+                    <h3>Texas Roasted Cauliflower Salad</h3>
+                    <p>Roasted cauliflower, red onion, chickpeas, baby spinach, and lemon tahini dressing</p>
+                </li>
+                <li>
+                    <h3>Pickles</h3>
+                </li>
+            </ul>
+        </section>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <ul>
+                <li>
+                    <h3>Caramel Churros</h3>
+                    <p>Served with a rich caramel dipping sauce</p>
+                </li>
+                <li>
+                    <h3>Chocolate Torte</h3>
+                    <p>Rich and decadent chocolate torte</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
