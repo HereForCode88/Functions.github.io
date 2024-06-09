@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canape Menu</title>
+    <link rel="stylesheet" href="canapesstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Blossom Festival</a></li>
+                <li><a href="BBQ.html">Garden BBQ</a></li>
+                <li><a href="setMenu.html">Set Menu</a></li>
+                <li><a href="canape.html">Canape</a></li>
+                <li><a href="buffet.html">Buffet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Canape Menu</h1>
+        
+        <section id="sliders">
+            <h2>Sliders</h2>
+            <ul>
+                <li>
+                    <h3>Beef Sliders</h3>
+                    <p>With pickles, cheese, mustard, and tomato relish</p>
+                </li>
+                <li>
+                    <h3>Fried Chicken Sliders</h3>
+                    <p>With pickles and apple/lemon slaw</p>
+                </li>
+                <li>
+                    <h3>Spicy Pulled Lamb Sliders</h3>
+                    <p>With tzatziki and pickled chili</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="canapes">
+            <h2>Canapés</h2>
+            <ul>
+                <li>
+                    <h3>Smoked Salmon Mousse and Chive Blini</h3>
+                </li>
+                <li>
+                    <h3>Nori Rolls</h3>
+                    <p>Filled with fresh vegetables and seafood</p>
+                </li>
+                <li>
+                    <h3>Spring Rolls</h3>
+                    <p>Served with sweet Thai chili sauce</p>
+                </li>
+                <li>
+                    <h3>Mini Savories</h3>
+                    <p>Served with tomato relish</p>
+                </li>
+                <li>
+                    <h3>Orange and Hoisin Chicken Nibbles</h3>
+                </li>
+            </ul>
+        </section>
+
+        <section id="sweets">
+            <h2>Sweets</h2>
+            <ul>
+                <li>
+                    <h3>Mini Strawberry Pavlovas</h3>
+                </li>
+                <li>
+                    <h3>Chocolate Brownie Bites</h3>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
