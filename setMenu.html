@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Menu</title>
+    <link rel="stylesheet" href="setMenustyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Blossom Festival</a></li>
+                <li><a href="BBQ.html">Garden BBQ</a></li>
+                <li><a href="setMenu.html">Set Menu</a></li>
+                <li><a href="canape.html">Canape</a></li>
+                <li><a href="buffet.html">Buffet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Set Menu</h1>
+        
+        <section id="entrees">
+            <h2>Entrée</h2>
+            <ul>
+                <li>
+                    <h3>Seafood Cocktail</h3>
+                    <p>Mixed seafood with cocktail sauce</p>
+                </li>
+                <li>
+                    <h3>Brandy and Chicken Liver Pâté</h3>
+                    <p>With toasted bread and onion jam</p>
+                </li>
+                <li>
+                    <h3>Chilled Summer Gazpacho</h3>
+                    <p>Refreshing chilled soup with seasonal ingredients</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="mains">
+            <h2>Mains</h2>
+            <ul>
+                <li>
+                    <h3>Braised Beef Cheek</h3>
+                    <p>Sweet potato and cumin hummus</p>
+                    <p>Baby beets</p>
+                </li>
+                <li>
+                    <h3>Twice Cooked Pork Belly</h3>
+                    <p>Roasted honey pumpkin</p>
+                    <p>Potato gratin</p>
+                    <p>Herb jus, plum sauce, and crispy shallots</p>
+                </li>
+                <li>
+                    <h3>Grilled Peri Peri Chicken</h3>
+                    <p>Marinated chicken with peri peri sauce</p>
+                    <p>Served with roasted vegetables</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <ul>
+                <li>
+                    <h3>Chocolate Torte</h3>
+                    <p>Rich and decadent chocolate torte</p>
+                </li>
+                <li>
+                    <h3>Eton Mess</h3>
+                    <p>Crushed meringue, strawberries, and whipped cream</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
