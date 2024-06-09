@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+ <header>
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="menu">
                 <li><a href="#mains">Mains</a></li>
                 <li><a href="#burgers">Burgers</a></li>
                 <li><a href="#salads">Salads</a></li>
@@ -126,5 +129,15 @@
             </ul>
         </section>
     </main>
+     <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
