@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: url('images/setMenuBackground.jpg') no-repeat center center fixed;
+    background: url('setMenuBackground.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     text-align: center; /* Center all text by default */
