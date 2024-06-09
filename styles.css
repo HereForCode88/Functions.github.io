@@ -77,6 +77,8 @@ main {
 main h1 {
     margin-bottom: 20px;
     color: #333;
+    font-family: 'Cinzel Decorative', cursive; /* Apply the new font */
+    font-size: 2.5rem;
 }
 
 section {
