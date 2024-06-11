@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delicious buffet menu with a variety of hot and cold dishes, including desserts.">
+    <meta name="keywords" content="Buffet Menu, Cold Dishes, Hot Dishes, Desserts, Peri-peri Chicken, Seafood Salad, Greek Salad">
+    <title>Buffet Menu</title>
+    <link rel="stylesheet" href="setMenustyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle menu">
+                &#9776;
+            </div>
+            <ul id="menu" aria-label="Main menu">
+                <li><a href="index.html">Blossom Festival</a></li>
+                <li><a href="BBQ.html">Garden BBQ</a></li>
+                <li><a href="setMenu.html">Set Menu</a></li>
+                <li><a href="canape.html">Canape</a></li>
+                <li><a href="buffet.html">Buffet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Buffet Menu</h1>
+        
+        <section id="Cold">
+            <h2>Cold</h2>
+            <ul>
+                <li>
+                    <h3>Selection of Breads</h3>
+                    <p>Accompanied by flavoured butters and oils</p>
+                </li>
+                <li>
+                    <h3>Seafood Salad</h3>
+                    <p>With a Mary Rose sauce</p>
+                </li>
+                <li>
+                    <h3>Classic Greek Salad</h3>
+                    <p>Cucumber, tomato, feta, pickled red onions, and olives</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Hot">
+            <h2>Hot</h2>
+            <ul>
+                <li>
+                    <h3>Slow Cooked Herbed Leg of Lamb</h3>
+                    <p>Accompanied by mint sauce</p>
+                </li>
+                <li>
+                    <h3>Roasted Beef Sirloin</h3>
+                    <p>Accompanied by horseradish and whole grain mustard</p>
+                </li>
+                <li>
+                    <h3>Rosemary and Garlic Roasted Potatoes</h3>
+                </li>
+                <li>
+                    <h3>Creamy Smoked Cheddar Vegetable Bake</h3>
+                </li>
+                <li>
+                    <h3>Peri-peri Chicken Thighs</h3>
+                    <p>Marinated in peri-peri spices and grilled to perfection</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Sweet-temptations">
+            <h2>Desserts</h2>
+            <ul>
+                <li>
+                    <h3>Chocolate Torte</h3>
+                    <p>Rich and decadent chocolate torte</p>
+                </li>
+                <li>
+                    <h3>Brandy Snaps</h3>
+                    <p>Served with caramel sauce and whipped cream</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
